@@ -1,0 +1,45 @@
+{
+  "version": "0.2.0",
+  "configurations": [
+    {
+      "name": "Executar P1",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/P1.exe",
+      "args": ["carros.csv", "carros.bin"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar formatação para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Compilar P1"
+    },
+    {
+      "name": "Executar P2",
+      "type": "cppdbg",
+      "request": "launch",
+      "program": "${workspaceFolder}/P2.exe",
+      "args": ["carros.bin"],
+      "stopAtEntry": false,
+      "cwd": "${workspaceFolder}",
+      "environment": [],
+      "externalConsole": true,
+      "MIMode": "gdb",
+      "setupCommands": [
+        {
+          "description": "Habilitar formatação para gdb",
+          "text": "-enable-pretty-printing",
+          "ignoreFailures": true
+        }
+      ],
+      "preLaunchTask": "Compilar P2"
+    }
+  ]
+}

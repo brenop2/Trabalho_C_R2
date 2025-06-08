@@ -1,0 +1,35 @@
+{
+  "version": "2.0.0",
+  "tasks": [
+    {
+      "label": "Compilar P1",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "P1.c",
+        "carros.c",
+        "-o",
+        "P1.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": true
+      }
+    },
+    {
+      "label": "Compilar P2",
+      "type": "shell",
+      "command": "gcc",
+      "args": [
+        "P2.c",
+        "carros.c",
+        "-o",
+        "P2.exe"
+      ],
+      "group": {
+        "kind": "build",
+        "isDefault": false
+      }
+    }
+  ]
+}
